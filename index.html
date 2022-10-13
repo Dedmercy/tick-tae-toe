@@ -2,44 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.stylesheet.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tic-tae-toe</title>
 </head>
 <body>
-    <header>
-        <h1>Tic-tae-toe</h1>
+    <header id="header" class="header center">
+        <p>Tic-tae-toe</p>
     </header>
     <main>
-        <div id="field">
-            <div id="game-field">
+        <div class="field" id="field">
+            <div class="main-field" id="main-field">
                 <div class="header-field" id="header-field">
-                    <h2>Score</h2>
-                    <div class="game-score field">
-                        <span></span>
-                    </div>
+                    <p class="score bold">Score
+                        <span class="score-player"></span>:
+                        <span class="score-computer"></span>
+                    </p>
                 </div>
-                <table>
+                <table class='game-field'>
                     <tr class="table-row">
-                        <td class="cell"><canvas></canvas></td>
-                        <td class="cell"><canvas></canvas></td>
-                        <td class="cell"><canvas></canvas></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
                     </tr>
                     <tr class="table-row">
-                        <td class="cell"><canvas></canvas></td>
-                        <td class="cell"><canvas></canvas></td>
-                        <td class="cell"><canvas></canvas></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
                     </tr>
                     <tr class="table-row">
-                        <td class="cell"><canvas></canvas></td>
-                        <td class="cell"><canvas></canvas></td>
-                        <td class="cell"><canvas></canvas></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas></canvas></div></td>
                     </tr>
                 </table>
             </div>
         </div>
     </main>
-    <footer id="footer">
+    <footer class="footer center" id="footer">
         <p id="footer-text">Made by<a id="footer-link" href="https://github.com/Dedmercy">Dedmercy</a></p>
     </footer>
 </body>
