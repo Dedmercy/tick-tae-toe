@@ -11,29 +11,36 @@
         <p>Tic-tae-toe</p>
     </header>
     <main>
+        <script src="scripts/script.js"></script>
         <div class="field" id="field">
             <div class="main-field" id="main-field">
                 <div class="header-field" id="header-field">
-                    <p class="score bold">Score
-                        <span class="score-player"></span>:
-                        <span class="score-computer"></span>
-                    </p>
+                    <div class="score-field">
+                        <p class="score bold">Score
+                            <span class="score-player"></span>:
+                            <span class="score-computer"></span>
+                        </p>
+                    </div>
+                    <div class="character-selection-field">
+                        <input type="radio" name="selected-character">
+                        <input type="radio" name="selected-character">
+                    </div>
                 </div>
                 <table class='game-field'>
                     <tr class="table-row">
-                        <td class="cell"><div><canvas></canvas></div></td>
-                        <td class="cell"><div><canvas></canvas></div></td>
-                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
                     </tr>
                     <tr class="table-row">
-                        <td class="cell"><div><canvas></canvas></div></td>
-                        <td class="cell"><div><canvas></canvas></div></td>
-                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
                     </tr>
                     <tr class="table-row">
-                        <td class="cell"><div><canvas></canvas></div></td>
-                        <td class="cell"><div><canvas></canvas></div></td>
-                        <td class="cell"><div><canvas></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
                     </tr>
                 </table>
             </div>

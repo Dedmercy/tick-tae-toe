@@ -39,3 +39,9 @@ header p{
 
 }
 
+.zero{
+    background-image: url("../img/cross.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
