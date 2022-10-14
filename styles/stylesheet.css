@@ -63,5 +63,10 @@ header p{
     height: 24px;
 }
 
+.score-field{
+    text-align: center;
+    font-size: 28px;
+}
+
 
 
