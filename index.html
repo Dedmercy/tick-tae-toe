@@ -22,14 +22,20 @@
                         </p>
                     </div>
                     <div class="character-selection-field">
-                        <input type="radio" name="selected-character">
-                        <input type="radio" name="selected-character">
+                        <div class="character-icon-field">
+                            <input id="selected-character-cross" type="radio" name="selected-character" onclick="selectCross()" checked>
+                            <img class="character-icon" src="img/cross.svg" alt="cross">
+                        </div>
+                        <div class="character-icon-field">
+                            <input id="selected-character-zero" type="radio" name="selected-character" onclick="selectZero(this)">
+                            <img class="character-icon" src="img/zero.svg" alt="zero">
+                        </div>
                     </div>
                 </div>
                 <table class='game-field'>
                     <tr class="table-row">
-                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
-                        <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas class="zero" onclick=clickEvent(this)></canvas></div></td>
+                        <td class="cell"><div><canvas class="zero" onclick=clickEvent(this)></canvas></div></td>
                         <td class="cell"><div><canvas onclick=clickEvent(this)></canvas></div></td>
                     </tr>
                     <tr class="table-row">

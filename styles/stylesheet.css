@@ -10,11 +10,12 @@
 canvas{
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .game-field{
     border-collapse: collapse;
-    border-spacing: 0px
+    border-spacing: 0
 }
 
 .cell div{
@@ -34,14 +35,33 @@ header p{
 
 .field{
     display: flex;
-    dispay: column;
     justify-content: center;
 
 }
 
 .zero{
+    background-image: url("../img/zero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cross{
     background-image: url("../img/cross.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.character-selection-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.character-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
 
